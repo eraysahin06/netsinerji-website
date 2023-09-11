@@ -1,0 +1,13 @@
+/* GENERAL FONT roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* LOGO FONT iceland */
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: 'roboto', 'sans-serif';
+}

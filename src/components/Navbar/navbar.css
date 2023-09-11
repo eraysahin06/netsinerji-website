@@ -1,0 +1,135 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #278aff;
+  height: 70px;
+  border-bottom: 0.5px solid #76b4fe;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  height: 100%;
+  padding: 0 15px;
+  padding-right: 5px;
+}
+
+.left a {
+  text-decoration: none;
+}
+
+.left img {
+  width: 50px;
+}
+
+.left h1 {
+  font-family: 'iceland';
+  color: #fff;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.right {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.right .nav-items {
+  display: flex;
+  margin-right: 30px;
+  gap: 12px;
+}
+
+.right .nav-items li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  list-style: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: lighter;
+  border-radius: 10px;
+  width: 70px;
+  height: 10px;
+  text-align: center;
+}
+
+.right .nav-items li:hover {
+  background-color: #fff;
+  color: #278aff;
+  font-weight: bold;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .right .nav-items {
+    gap: 0;
+  }
+}
+
+.right .menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px; /* Adjust as needed */
+  order: 2;
+}
+
+@media (min-width: 720px) {
+  .bars,
+  .times {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .right .nav-items {
+    display: none;
+  }
+
+  .right .menu-icon {
+    display: block;
+  }
+
+  .active .right .nav-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    background-color: #278aff;
+    width: 100%;
+    margin: 0;
+    text-align: right;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    align-items: center;
+  }
+
+  .active .right .nav-items li {
+    width: 100vw;
+  }
+
+  .active .right .nav-items.active {
+    transform: translateY(0);
+  }
+}
+
+.right .menu-icon.hidden {
+  display: none;
+}
