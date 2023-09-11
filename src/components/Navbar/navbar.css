@@ -28,11 +28,19 @@
   width: 50px;
 }
 
+.nav-left img:hover {
+  transform: scale(1.04);
+}
+
 .nav-left h1 {
   font-family: 'iceland';
   color: #fff;
   font-weight: lighter;
   font-size: 30px;
+}
+
+.nav-left h1:hover {
+  transform: scale(1.04);
 }
 
 .nav-right {
