@@ -3,14 +3,14 @@
   align-items: center;
   background-color: #278aff;
   height: 70px;
-  border-bottom: 0.5px solid #76b4fe;
+  border-bottom: 0.5px solid #3d94ff;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
 }
 
-.left {
+.nav-left {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -20,22 +20,22 @@
   padding-right: 5px;
 }
 
-.left a {
+.nav-left a {
   text-decoration: none;
 }
 
-.left img {
+.nav-left img {
   width: 50px;
 }
 
-.left h1 {
+.nav-left h1 {
   font-family: 'iceland';
   color: #fff;
   font-weight: lighter;
   font-size: 30px;
 }
 
-.right {
+.nav-right {
   flex: 3;
   height: 100%;
   display: flex;
@@ -43,13 +43,13 @@
   justify-content: flex-end;
 }
 
-.right .nav-items {
+.nav-right .nav-items {
   display: flex;
   margin-right: 30px;
   gap: 12px;
 }
 
-.right .nav-items li {
+.nav-right .nav-items li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,7 @@
   text-align: center;
 }
 
-.right .nav-items li:hover {
+.nav-right .nav-items li:hover {
   background-color: #fff;
   color: #278aff;
   font-weight: bold;
@@ -80,7 +80,7 @@
   }
 }
 
-.right .menu-icon {
+.nav-right .menu-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,15 +99,15 @@
 }
 
 @media (max-width: 720px) {
-  .right .nav-items {
+  .nav-right .nav-items {
     display: none;
   }
 
-  .right .menu-icon {
+  .nav-right .menu-icon {
     display: block;
   }
 
-  .active .right .nav-items {
+  .active .nav-right .nav-items {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -121,15 +121,15 @@
     align-items: center;
   }
 
-  .active .right .nav-items li {
+  .active .nav-right .nav-items li {
     width: 100vw;
   }
 
-  .active .right .nav-items.active {
+  .active .nav-right .nav-items.active {
     transform: translateY(0);
   }
 }
 
-.right .menu-icon.hidden {
+.nav-right .menu-icon.hidden {
   display: none;
 }

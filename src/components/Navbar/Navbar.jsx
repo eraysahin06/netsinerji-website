@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
-      <div className="left">
+      <div className="nav-left">
         <Link to="/">
           <img src={NetsinerjiLogo} alt="netsinerji logo" />
         </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
           <h1>Netsinerji</h1>
         </Link>
       </div>
-      <div className="right">
+      <div className="nav-right">
         <div
           className={`menu-icon ${isMenuOpen ? 'hidden' : ''}`}
           onClick={toggleMenu}
