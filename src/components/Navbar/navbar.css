@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #0779ff;
+  background-color: #00142b;
   height: 70px;
-  border-bottom: 0.5px solid #3d94ff;
+  border-bottom: 0.5px solid #0050b1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -56,7 +56,6 @@
   display: flex;
   margin-right: 30px;
   gap: 12px;
-  border-bottom: 1px solid #3d94ff;
   border-radius: 10px;
 }
 
@@ -76,8 +75,8 @@
 }
 
 .nav-right .nav-items li:hover {
-  background-color: #fff;
-  color: #278aff;
+  background-color: #00285a;
+  color: #fff;
   font-weight: bold;
 }
 

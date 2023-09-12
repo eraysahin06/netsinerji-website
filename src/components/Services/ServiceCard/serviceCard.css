@@ -1,0 +1,135 @@
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #001d3f;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+.left {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  padding: 10px;
+}
+
+.right h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.right p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.right ul {
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.right ul li {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.right ul li p:before {
+  content: '\2022';
+  color: #00e5bc;
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+  margin: 5px;
+}
+
+.right button {
+  border: none;
+  width: 220px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00e5bc;
+}
+
+.right button:hover {
+  color: #fff;
+  background-color: #001d3f;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .service-card {
+    flex-direction: row;
+    width: 300px;
+    height: 500px;
+  }
+
+  .left {
+    height: 200px;
+  }
+
+  .right {
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right h2 {
+    font-size: 20px;
+  }
+
+  .right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 0;
+  }
+
+  .right p {
+    font-size: 13px;
+  }
+}

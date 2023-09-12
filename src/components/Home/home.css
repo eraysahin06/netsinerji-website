@@ -1,6 +1,6 @@
 .home {
   margin-top: 70px;
-  background-color: #278aff;
+  background-color: #001d3f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,12 +47,12 @@
   margin-top: 10px;
   margin-left: 10px;
   font-weight: bold;
-  color: #278aff;
+  color: #001d3f;
 }
 
 .home-left button:hover {
   color: #fff;
-  background-color: #278aff;
+  background-color: #001d3f;
   border: 2px solid #fff;
   cursor: pointer;
 }

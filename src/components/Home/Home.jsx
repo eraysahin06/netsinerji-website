@@ -1,5 +1,5 @@
 import './home.css';
-import Laptop from '../../assets/Laptop.png';
+import Laptop from '../../assets/Laptop2.png';
 import Typist from 'react-typist';
 
 const Home = () => {
