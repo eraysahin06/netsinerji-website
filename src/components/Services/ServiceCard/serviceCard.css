@@ -66,6 +66,13 @@
   margin-top: 5px;
 }
 
+.right ul li p {
+  color: #dddddd;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
 .right ul li {
   color: #fff;
   font-size: 15px;
@@ -99,6 +106,7 @@
   background-color: #001d3f;
   border: 2px solid #fff;
   cursor: pointer;
+  font-size: 15px;
 }
 
 @media (max-width: 620px) {
@@ -120,6 +128,8 @@
 
   .right h2 {
     font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
   }
 
   .right ul {
