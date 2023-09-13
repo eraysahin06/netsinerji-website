@@ -1,5 +1,3 @@
-// servicesData.js
-
 const servicesData = {
   endUserSupport: [
     'Advanced Problem Solving',
@@ -15,15 +13,22 @@ const servicesData = {
     'Driver Installation and Update',
   ],
   mobileSupport: [
-    'Basic - Peripheral Equipments',
-    'Scanners and Printers',
-    'Audio and Video Systems',
-    'Driver Installation and Update',
+    'Mobile App Configuration',
+    'App Support',
+    'Device Support',
+    'OS Based Support',
+    'Advanced Troubleshooting',
   ],
   networkSupport: [
     'TCP/IP Connections',
     'Local & Remote Network Installation',
     'Virtual Private Network (VPN)',
+  ],
+  securitySoftware: [
+    'Firewall Installation & Configuration',
+    'Antivirus - Antimalware Installation',
+    'Update & Licensing',
+    'Advanced Troubleshooting',
   ],
   maintenanceBackup: [
     'Periodic Hardware Maintenance',

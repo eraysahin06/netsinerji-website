@@ -17,34 +17,42 @@ const serviceObjects = [
   {
     image: EndUser,
     title: 'End User Support',
+    list: servicesData.endUserSupport,
   },
   {
     image: Hardware,
     title: 'Hardware Services',
+    list: servicesData.hardwareServices,
   },
   {
     image: Mobile,
     title: 'Mobile Support',
+    list: servicesData.mobileSupport,
   },
   {
     image: Network,
     title: 'Network Support',
+    list: servicesData.networkSupport,
   },
   {
     image: Security,
     title: 'Security Software',
+    list: servicesData.securitySoftware,
   },
   {
     image: Maintenance,
     title: 'Maintenance & Backup',
+    list: servicesData.maintenanceBackup,
   },
   {
     image: CloudBased,
     title: 'Cloud Based File Repositories',
+    list: servicesData.cloudBased,
   },
   {
     image: ITSupport,
     title: 'IT Support',
+    list: servicesData.itSupport,
   },
 ];
 
@@ -59,7 +67,7 @@ const Services = () => {
             key={index}
             image={service.image}
             title={service.title}
-            listItems={servicesData.endUserSupport}
+            listItems={service.list}
           />
         ))}
       </div>
