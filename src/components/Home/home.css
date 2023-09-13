@@ -106,6 +106,7 @@
 .home-right img:hover {
   transform: scale(1.04);
   overflow: hidden;
+  transition: 0.5s ease-in-out;
 }
 
 @media (min-width: 2160px) {

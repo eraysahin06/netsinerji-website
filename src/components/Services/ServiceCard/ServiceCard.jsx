@@ -5,7 +5,7 @@ const ServiceCard = ({ image, title, listItems }) => {
   return (
     <div className="service-card">
       <div className="service-left">
-        <img src={image} alt="service photo" />
+        <img src={image} alt="service photo" loading="lazy" />
       </div>
       <div className="service-right">
         <h2>{title}</h2>
