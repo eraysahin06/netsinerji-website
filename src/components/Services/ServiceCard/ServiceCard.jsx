@@ -1,35 +1,31 @@
 import './serviceCard.css';
-import EndUser from '../../../assets/Service Cards/EndUser.jpg';
+import PropTypes from 'prop-types';
 
-const ServiceCard = () => {
+const ServiceCard = ({ image, title, listItems }) => {
   return (
     <div className="service-card">
       <div className="service-left">
-        <img src={EndUser} alt="a laptop and a coffee on a table" />
+        <img src={image} alt="service photo" />
       </div>
       <div className="service-right">
-        <h2>End User Support</h2>
+        <h2>{title}</h2>
         <ul>
-          <li>
-            <p>Advanced Problem Solving</p>
-          </li>
-          <li>
-            <p>Configuration Management</p>
-          </li>
-          <li>
-            <p>Update & Upgrade Management</p>
-          </li>
-          <li>
-            <p>OS Based Support</p>
-          </li>
-          <li>
-            <p>Advanced Troubleshooting</p>
-          </li>
+          {listItems.map((item, index) => (
+            <li key={index}>
+              <p>{item}</p>
+            </li>
+          ))}
         </ul>
         <button>Learn More</button>
       </div>
     </div>
   );
+};
+
+ServiceCard.propTypes = {
+  image: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
+  listItems: PropTypes.array.isRequired,
 };
 
 export default ServiceCard;

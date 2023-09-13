@@ -13,7 +13,8 @@ const SolutionCard = ({ icon, name }) => {
 };
 
 SolutionCard.propTypes = {
-  icon: PropTypes.node.isRequired, // Validate that 'icon' is a required prop of type 'node'.
+  icon: PropTypes.node.isRequired,
+  name: PropTypes.node.isRequired, // Validate that 'icon' is a required prop of type 'node'.
 };
 
 export default SolutionCard;
