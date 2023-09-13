@@ -1,5 +1,5 @@
-.services {
-  background-color: #00142b;
+.solutions {
+  background-color: #001d3f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,14 +8,7 @@
   box-sizing: border-box;
 }
 
-.top-text {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.service-cards {
+.solution-cards {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;

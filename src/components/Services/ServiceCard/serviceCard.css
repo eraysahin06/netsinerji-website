@@ -27,7 +27,7 @@
   border: 3px solid #fff;
 }
 
-.left {
+.service-left {
   flex: 1;
   height: 100%;
   width: 100%;
@@ -37,7 +37,7 @@
   justify-content: center;
 }
 
-.right {
+.service-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,40 +46,40 @@
   padding: 10px;
 }
 
-.right h2 {
+.service-right h2 {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
   text-align: center;
 }
 
-.right p {
+.service-right p {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   margin-left: 5px;
 }
 
-.right ul {
+.service-right ul {
   list-style: none;
   margin-left: 10px;
   margin-top: 5px;
 }
 
-.right ul li p {
+.service-right ul li p {
   color: #dddddd;
   font-size: 15px;
   font-weight: 500;
   margin-left: 5px;
 }
 
-.right ul li {
+.service-right ul li {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
 }
 
-.right ul li p:before {
+.service-right ul li p:before {
   content: '\2022';
   color: #00e5bc;
   font-weight: 700;
@@ -88,7 +88,7 @@
   margin: 5px;
 }
 
-.right button {
+.service-right button {
   border: none;
   width: 220px;
   text-align: center;
@@ -97,11 +97,12 @@
   margin-top: 20px;
   margin-left: 10px;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   background-color: #00e5bc;
+  transition: 0.2s ease-in-out;
 }
 
-.right button:hover {
+.service-right button:hover {
   color: #fff;
   background-color: #001d3f;
   border: 2px solid #fff;
@@ -113,35 +114,40 @@
   .service-card {
     flex-direction: row;
     width: 300px;
-    height: 500px;
+    height: 600px;
+    padding-top: 0;
   }
 
-  .left {
+  .service-left {
     height: 200px;
   }
 
-  .right {
+  .service-right {
     height: 200px;
     align-items: center;
     justify-content: center;
+    margin-top: -80px;
   }
 
-  .right h2 {
+  .service-right h2 {
     font-size: 20px;
-    margin-bottom: 5px;
-    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
-  .right ul {
+  .service-right ul li p:before {
+    display: none;
+  }
+
+  .service-right ul {
+    line-height: 30px;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin-left: 0;
+    align-items: center;
+    width: 120%;
   }
 
   .right p {
     font-size: 13px;
   }
 }
-
-/* commit */

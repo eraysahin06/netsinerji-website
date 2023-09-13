@@ -4,10 +4,10 @@ import EndUser from '../../../assets/Service Cards/EndUser.jpg';
 const ServiceCard = () => {
   return (
     <div className="service-card">
-      <div className="left">
+      <div className="service-left">
         <img src={EndUser} alt="a laptop and a coffee on a table" />
       </div>
-      <div className="right">
+      <div className="service-right">
         <h2>End User Support</h2>
         <ul>
           <li>

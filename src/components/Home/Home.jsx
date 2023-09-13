@@ -1,6 +1,7 @@
 import './home.css';
-import Laptop from '../../assets/Laptop2.png';
+import Laptop from '../../assets/Laptop.png';
 import Typist from 'react-typist';
+import Logo from '../../assets/NetsinerjiLogo.png';
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
             element: '',
           }}
         >
+          <div className="img-container">
+            <img src={Logo} alt="Netsinerji Logo" />
+          </div>
           <h2>
             Elevate Your <span>Digital Potential</span>.
           </h2>
@@ -29,6 +33,9 @@ const Home = () => {
       <div className="home-right">
         <img src={Laptop} alt="laptop with info" />
       </div>
+      <div className="background-shape"></div>
+      <div className="background-shape2"></div>
+      <div className="background-shape3"></div>
     </div>
   );
 };

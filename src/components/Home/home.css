@@ -7,6 +7,30 @@
   height: calc(100vh - 70px);
 }
 
+.background-shape {
+  width: 450px;
+  height: 300px;
+  background: linear-gradient(#00142b, #006c58, #00bc9a);
+  border-radius: 0% 0 0 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  opacity: 0.1;
+}
+
+.background-shape3 {
+  width: 450px;
+  height: 100px;
+  border-radius: 0% 90% 0% 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+
+  background: linear-gradient(#00bc9a, #006c58, #00142b);
+}
+
 .home-left {
   display: flex;
   flex: 1;
@@ -15,6 +39,7 @@
   height: 100%;
   justify-content: center;
   margin-left: 60px;
+  z-index: 100;
 }
 
 .home-left h2 {
@@ -50,11 +75,16 @@
   color: #001d3f;
 }
 
+.home-left img {
+  display: none;
+}
+
 .home-left button:hover {
   color: #fff;
   background-color: #001d3f;
   border: 2px solid #fff;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .home-right {
@@ -63,11 +93,19 @@
   justify-content: center;
   flex: 1;
   height: 100%;
+  overflow: hidden;
+  padding: 15px;
 }
 
 .home-right img {
   width: 100%;
-  min-width: 500px;
+  min-width: 445px;
+  z-index: 100;
+}
+
+.home-right img:hover {
+  transform: scale(1.04);
+  overflow: hidden;
 }
 
 @media (min-width: 2160px) {
@@ -82,6 +120,41 @@
 
 @media (max-width: 920px) {
   .home-right {
+    display: none;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .home-left img {
+    display: block;
+    z-index: 1000;
+    height: 100px;
+  }
+
+  .background-shape {
+    z-index: 10;
+  }
+
+  .background-shape2 {
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#00142b, #006c58, #00bc9a);
+    overflow: hidden;
+    opacity: 0.1;
+    border-radius: 0% 50% 0% 0%;
+  }
+
+  .background-shape3 {
     display: none;
   }
 
@@ -100,6 +173,7 @@
   .home-left p {
     text-align: center;
     padding: 10px;
+    max-width: 500px;
   }
 
   .home-left button {
