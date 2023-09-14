@@ -55,7 +55,7 @@
 .nav-right .nav-items {
   display: flex;
   margin-right: 30px;
-  gap: 12px;
+  gap: 15px;
   border-radius: 10px;
 }
 
@@ -68,14 +68,13 @@
   cursor: pointer;
   color: #fff;
   font-weight: lighter;
-  border-radius: 10px;
   width: 70px;
   height: 10px;
   text-align: center;
 }
 
 .nav-right .nav-items li:hover {
-  background-color: #00285a;
+  border-bottom: 2px solid #00e5bc;
   color: #fff;
   font-weight: bold;
 }

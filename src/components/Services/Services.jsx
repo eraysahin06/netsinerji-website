@@ -18,41 +18,49 @@ const serviceObjects = [
     image: EndUser,
     title: 'End User Support',
     list: servicesData.endUserSupport,
+    route: servicesData.navigate.endUser,
   },
   {
     image: Hardware,
     title: 'Hardware Services',
     list: servicesData.hardwareServices,
+    route: servicesData.navigate.hardwareServices,
   },
   {
     image: Mobile,
     title: 'Mobile Support',
     list: servicesData.mobileSupport,
+    route: servicesData.navigate.mobileSupport,
   },
   {
     image: Network,
     title: 'Network Support',
     list: servicesData.networkSupport,
+    route: servicesData.navigate.networkSupport,
   },
   {
     image: Security,
     title: 'Security Software',
     list: servicesData.securitySoftware,
+    route: servicesData.navigate.securitySoftware,
   },
   {
     image: Maintenance,
     title: 'Maintenance & Backup',
     list: servicesData.maintenanceBackup,
+    route: servicesData.navigate.maintenanceBackup,
   },
   {
     image: CloudBased,
     title: 'Cloud Based File Repositories',
     list: servicesData.cloudBased,
+    route: servicesData.navigate.cloudBased,
   },
   {
     image: ITSupport,
     title: 'IT Support',
     list: servicesData.itSupport,
+    route: servicesData.navigate.itSupport,
   },
 ];
 
@@ -68,6 +76,7 @@ const Services = () => {
             image={service.image}
             title={service.title}
             listItems={service.list}
+            route={service.route}
           />
         ))}
       </div>

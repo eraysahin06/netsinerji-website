@@ -9,14 +9,9 @@
   box-sizing: border-box;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   flex-wrap: wrap;
   padding-bottom: 30px;
-}
-
-.service-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .service-card img {
@@ -99,7 +94,7 @@
   font-weight: bold;
   color: #000;
   background-color: #00e5bc;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .service-right button:hover {

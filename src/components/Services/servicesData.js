@@ -49,6 +49,16 @@ const servicesData = {
     'Remote Worker Infrastructure Preparation',
     'Application Development & Cross-Application Integration',
   ],
+  navigate: {
+    endUser: '/end-user-support',
+    hardwareServices: '/hardware-services',
+    mobileSupport: '/mobile-support',
+    networkSupport: '/network-support',
+    securitySoftware: '/security-software',
+    maintenanceBackup: '/maintenance-backup',
+    cloudBased: '/cloud-based',
+    itSupport: '/it-support',
+  },
 };
 
 export default servicesData;

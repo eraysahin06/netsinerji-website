@@ -56,7 +56,7 @@ textarea:focus {
   border: 3px solid #00e5bc;
 }
 
-button {
+.send-message-btn {
   align-self: center;
   width: 100px;
   height: 40px;
@@ -69,7 +69,7 @@ button {
   outline: none;
 }
 
-button:hover {
+.send-message-btn:hover {
   transform: scale(1.05);
   background-color: #00142b;
   color: #fff;
