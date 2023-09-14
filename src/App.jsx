@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Solutions from './components/Solutions/Solutions';
+import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Home />
         <Services />
         <Solutions />
+        <ContactUs />
       </Router>
     </div>
   );
