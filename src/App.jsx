@@ -19,7 +19,7 @@ import ITSupport from './Pages/ServicePages/ITSupport';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router className="scroll-link">
         <Navbar />
         <Routes>
           <Route

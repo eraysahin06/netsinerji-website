@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './navbar.css';
 import NetsinerjiLogo from '../../assets/NetsinerjiLogo.png';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import hamburger and X icons
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,15 +11,37 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
       <div className="nav-left">
-        <Link to="/">
+        <ScrollLink
+          className="logo-btn"
+          to="home-section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={400}
+          activeClass="active-item"
+          onClick={closeMenu}
+        >
           <img src={NetsinerjiLogo} alt="netsinerji logo" />
-        </Link>
-        <Link to="/">
+        </ScrollLink>
+        <ScrollLink
+          className="logo-btn"
+          to="home-section"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={400}
+          activeClass="active-item"
+          onClick={closeMenu}
+        >
           <h1>Netsinerji</h1>
-        </Link>
+        </ScrollLink>
       </div>
       <div className="nav-right">
         <div
@@ -35,21 +57,56 @@ const Navbar = () => {
           <FaTimes className="times" color="#fff" />
         </div>
         <ul className={`nav-items ${isMenuOpen ? 'active' : ''}`}>
-          <Link to="/">
+          <ScrollLink
+            to="home-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={400}
+            activeClass="active-item"
+            onClick={closeMenu}
+          >
             <li>Home</li>
-          </Link>
-          <Link to="/">
+          </ScrollLink>
+          <ScrollLink
+            to="services-section"
+            spy={true}
+            smooth={true}
+            offset={-65}
+            duration={400}
+            activeClass="active-item"
+            onClick={closeMenu}
+          >
             <li>Services</li>
-          </Link>
-          <Link to="/">
+          </ScrollLink>
+          <ScrollLink to="/">
             <li>Info Bank</li>
-          </Link>
-          <Link to="/">
+          </ScrollLink>
+          <ScrollLink
+            to="solutions-section"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={400}
+            activeClass="active-item"
+            onClick={closeMenu}
+          >
+            <li>Solutions</li>
+          </ScrollLink>
+          <ScrollLink to="/">
             <li>About</li>
-          </Link>
-          <Link to="/">
+          </ScrollLink>
+          <ScrollLink
+            to="contact-section"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={400}
+            activeClass="active-item"
+            onClick={closeMenu}
+          >
             <li>Contact</li>
-          </Link>
+          </ScrollLink>
         </ul>
       </div>
     </nav>

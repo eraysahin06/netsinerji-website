@@ -10,11 +10,11 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contact-us">
+    <div id="contact-section" className="contact-us">
       <h1 className="top-text">Contact Us</h1>
       {submitted ? (
         <p className="thank-you-message">
-          Thank you for your message! We'll get back to you soon.
+          Thank you for your message! We&apos;ll get back to you soon.
         </p>
       ) : (
         <form onSubmit={handleSubmit}>

@@ -5,7 +5,7 @@ import Logo from '../../assets/NetsinerjiLogo.png';
 
 const Home = () => {
   return (
-    <div className="home">
+    <div id='home-section' className="home">
       <div className="home-left">
         <Typist
           avgTypingDelay={40}

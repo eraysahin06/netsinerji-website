@@ -14,7 +14,7 @@ import { AiFillPrinter, AiFillFilePdf } from 'react-icons/ai';
 
 const Solutions = () => {
   return (
-    <div className="solutions">
+    <div id='solutions-section' className="solutions">
       <h1 className="top-text">Our Software Solutions</h1>
       <div className="solution-cards">
         <SolutionCard

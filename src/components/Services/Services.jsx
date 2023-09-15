@@ -66,7 +66,7 @@ const serviceObjects = [
 
 const Services = () => {
   return (
-    <div className="services">
+    <div id="services-section" className="services">
       <h1 className="top-text">Explore Our Services</h1>
       <div className="service-cards">
         {/* Map over the serviceObjects array to render ServiceCard components */}
