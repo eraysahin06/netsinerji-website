@@ -1,5 +1,4 @@
 .service-page {
-  margin-top: 70px;
   background-color: #00142b;
   display: flex;
   flex-direction: column;
@@ -102,7 +101,9 @@
 }
 
 .interested-contact-btn {
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 40px;
   border-radius: 10px;

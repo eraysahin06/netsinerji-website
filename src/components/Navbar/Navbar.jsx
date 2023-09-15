@@ -3,6 +3,7 @@ import './navbar.css';
 import NetsinerjiLogo from '../../assets/NetsinerjiLogo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,30 +19,12 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
       <div className="nav-left">
-        <ScrollLink
-          className="logo-btn"
-          to="home-section"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={400}
-          activeClass="active-item"
-          onClick={closeMenu}
-        >
+        <Link to="/">
           <img src={NetsinerjiLogo} alt="netsinerji logo" />
-        </ScrollLink>
-        <ScrollLink
-          className="logo-btn"
-          to="home-section"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={400}
-          activeClass="active-item"
-          onClick={closeMenu}
-        >
+        </Link>
+        <Link to="/">
           <h1>Netsinerji</h1>
-        </ScrollLink>
+        </Link>
       </div>
       <div className="nav-right">
         <div

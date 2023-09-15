@@ -20,12 +20,12 @@ function App() {
   return (
     <div className="App">
       <Router className="scroll-link">
-        <Navbar />
         <Routes>
           <Route
             path="/"
             element={
               <>
+                <Navbar />
                 <Home />
                 <Services />
                 <Solutions />
@@ -42,6 +42,9 @@ function App() {
           <Route path="/maintenance-backup" element={<MaintenanceBackup />} />
           <Route path="/cloud-based" element={<CloudBased />} />
           <Route path="/it-support" element={<ITSupport />} />
+
+          {/* SEPARATE CONTACT US */}
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </Router>
     </div>
