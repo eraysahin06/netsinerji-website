@@ -1,5 +1,5 @@
 .contact-us {
-  background-color: #00142b;
+  background: linear-gradient(#00bc9a, #006c58, #00142b);
   display: flex;
   align-items: center;
   justify-content: center;

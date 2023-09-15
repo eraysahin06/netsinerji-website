@@ -1,5 +1,5 @@
 .services {
-  background-color: #00142b;
+  background: linear-gradient(#00bc9a, #006c58, #00142b);
   display: flex;
   flex-direction: column;
   align-items: center;

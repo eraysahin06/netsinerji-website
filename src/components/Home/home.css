@@ -1,6 +1,6 @@
 .home {
   margin-top: 70px;
-  background-color: #001d3f;
+  background: linear-gradient(#00142b, #006c58, #00bc9a);
   display: flex;
   justify-content: center;
   align-items: center;
