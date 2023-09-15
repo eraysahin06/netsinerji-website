@@ -10,7 +10,7 @@
 
 .App {
   font-family: 'roboto', 'sans-serif';
-  background: linear-gradient(#00bc9a, #006c58, #00142b);
+  background-color: #00bc9a;
 }
 
 .scroll-link {
