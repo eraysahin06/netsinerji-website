@@ -2,10 +2,11 @@ import './home.css';
 import Laptop from '../../assets/Laptop.png';
 import Typist from 'react-typist';
 import Logo from '../../assets/NetsinerjiLogo.png';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Home = () => {
   return (
-    <div id='home-section' className="home">
+    <div id="home-section" className="home">
       <div className="home-left">
         <Typist
           avgTypingDelay={40}
@@ -28,7 +29,17 @@ const Home = () => {
           <span> empower businesses and individuals</span> to soar beyond their
           <span> digital goals</span>.
         </p>
-        <button>Get Started</button>
+        <ScrollLink
+          to="services-section"
+          spy={true}
+          smooth={true}
+          offset={-65}
+          duration={400}
+          activeClass="active-item"
+          className='get-started-btn'
+        >
+          <button>Get Started</button>
+        </ScrollLink>
       </div>
       <div className="home-right">
         <img src={Laptop} alt="laptop with info" />

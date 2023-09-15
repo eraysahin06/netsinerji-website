@@ -19,12 +19,12 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
       <div className="nav-left">
-        <Link to="/">
+        <a href="/">
           <img src={NetsinerjiLogo} alt="netsinerji logo" />
-        </Link>
-        <Link to="/">
+        </a>
+        <a href="/">
           <h1>Netsinerji</h1>
-        </Link>
+        </a>
       </div>
       <div className="nav-right">
         <div
@@ -85,7 +85,9 @@ const Navbar = () => {
             <li>Contact</li>
           </ScrollLink>
           <button className="green-btn">Info Bank</button>
-          <button className="green-btn">About</button>
+          <Link to="/about">
+            <button className="green-btn">About</button>
+          </Link>
         </ul>
       </div>
     </nav>

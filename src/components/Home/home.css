@@ -63,7 +63,7 @@
   color: #fff;
 }
 
-.home-left button {
+.get-started-btn button {
   border: none;
   width: 220px;
   text-align: center;
@@ -80,7 +80,7 @@
   display: none;
 }
 
-.home-left button:hover {
+.get-started-btn button:hover {
   color: #fff;
   background-color: #001d3f;
   border: 2px solid #00e5bc;
@@ -179,8 +179,8 @@
     max-width: 500px;
   }
 
-  .home-left button {
-    width: 50%;
+  .get-started-btn button {
+    width: 100px;
   }
 }
 

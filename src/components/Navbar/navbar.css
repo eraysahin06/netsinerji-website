@@ -111,10 +111,6 @@
   font-weight: bold;
 }
 
-.nav-right .nav-items .active-item:hover {
-  border-bottom: 2px solid #00e5bc;
-}
-
 @media (max-width: 850px) {
   .right .nav-items {
     gap: 0;
@@ -165,6 +161,18 @@
 
   .active .nav-right .nav-items li {
     width: 100vw;
+  }
+
+  .green-btn {
+    width: 100%;
+  }
+
+  .nav-right .nav-items .active-item {
+    border: none;
+  }
+
+  .nav-right .nav-items .active-item:hover {
+    border: none;
   }
 
   .active .nav-right .nav-items.active {
