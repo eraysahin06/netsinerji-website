@@ -22,8 +22,8 @@ const ContactUs = () => {
   return (
     <div id="contact-section" className="contact-us">
       {location.pathname === '/contact' && ( // Check if the current route is /contact
-        <div onClick={goBack} className="back-link">
-          <button className="back-btn">
+        <div className="back-link">
+          <button onClick={goBack} className="back-btn">
             <BiArrowBack className="back-arrow" /> <span> Back</span>
           </button>
         </div>

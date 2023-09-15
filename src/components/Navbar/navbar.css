@@ -77,6 +77,24 @@
   text-align: center;
 }
 
+.green-btn {
+  background-color: #00e5bc;
+  border: 2px solid #00e5bc;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.green-btn:hover {
+  background-color: #00142b;
+  border: 2px solid #00e5bc;
+  color: #fff;
+}
+
 .nav-right .nav-items li:hover {
   border-bottom: 2px solid #00e5bc;
   color: #fff;

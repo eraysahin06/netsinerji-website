@@ -62,9 +62,6 @@ const Navbar = () => {
           >
             <li>Services</li>
           </ScrollLink>
-          <ScrollLink to="/">
-            <li>Info Bank</li>
-          </ScrollLink>
           <ScrollLink
             to="solutions-section"
             spy={true}
@@ -75,9 +72,6 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             <li>Solutions</li>
-          </ScrollLink>
-          <ScrollLink to="/">
-            <li>About</li>
           </ScrollLink>
           <ScrollLink
             to="contact-section"
@@ -90,6 +84,8 @@ const Navbar = () => {
           >
             <li>Contact</li>
           </ScrollLink>
+          <button className="green-btn">Info Bank</button>
+          <button className="green-btn">About</button>
         </ul>
       </div>
     </nav>

@@ -8,7 +8,8 @@
   border-radius: 10px;
   box-sizing: border-box;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 3px solid #00e5bc;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   transition: all 0.1s ease-in-out;
   flex-wrap: wrap;
   padding-bottom: 30px;

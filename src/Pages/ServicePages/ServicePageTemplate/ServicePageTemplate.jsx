@@ -17,8 +17,8 @@ const ServicePageTemplate = ({ pageTitle, pageContent, listItems }) => {
 
   return (
     <div className="service-page">
-      <div onClick={goBack} className="back-link">
-        <button className="back-btn">
+      <div className="back-link">
+        <button onClick={goBack} className="back-btn">
           <BiArrowBack className="back-arrow" /> <span> Back</span>
         </button>
       </div>

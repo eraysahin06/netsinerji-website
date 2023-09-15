@@ -13,6 +13,7 @@
   transition: all 0.3s ease-in-out;
   flex-wrap: wrap;
   border: 3px solid #00e5bc;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .solution-card:hover {
