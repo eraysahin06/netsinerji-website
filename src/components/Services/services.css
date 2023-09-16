@@ -1,0 +1,24 @@
+.services {
+  background: linear-gradient(#00bc9a, #006c58, #00142b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.top-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
