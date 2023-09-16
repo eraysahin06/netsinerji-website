@@ -1,4 +1,3 @@
-import React from 'react';
 import ServiceCard from './ServiceCard/ServiceCard';
 import './services.css';
 import servicesData from './servicesData';

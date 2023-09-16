@@ -1,4 +1,3 @@
-import React from 'react';
 
 import './aboutPage.css'; // Import your CSS file
 import NetsinerjiLogo from '../../assets/NetsinerjiLogo.png';

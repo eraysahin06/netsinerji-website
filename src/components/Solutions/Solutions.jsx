@@ -1,4 +1,3 @@
-import React from 'react';
 import SolutionCard from './SolutionCard/SolutionCard';
 import './solutions.css';
 import solutionsData from './solutionsData';

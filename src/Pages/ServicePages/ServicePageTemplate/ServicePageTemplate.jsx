@@ -1,4 +1,3 @@
-import React from 'react';
 
 import '../servicePages.css';
 import { BiArrowBack } from 'react-icons/bi';

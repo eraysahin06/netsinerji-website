@@ -1,4 +1,3 @@
-import React from 'react';
 import './footer.css';
 import NetsinerjiLogo from '../../assets/NetsinerjiLogo.png';
 import { useNavigate } from 'react-router-dom';

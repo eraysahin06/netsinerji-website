@@ -1,4 +1,3 @@
-import React from 'react';
 import './home.css';
 import Laptop from '../../assets/Laptop.png';
 import Typist from 'react-typist';
