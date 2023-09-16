@@ -1,3 +1,5 @@
+import React from 'react';
+
 import ServicePageTemplate from './ServicePageTemplate/ServicePageTemplate';
 
 const MobileSupport = () => {

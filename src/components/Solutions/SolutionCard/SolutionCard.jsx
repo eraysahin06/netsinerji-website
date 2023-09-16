@@ -1,3 +1,4 @@
+import React from 'react';
 import './solutionCard.css';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';

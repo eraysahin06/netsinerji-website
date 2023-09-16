@@ -1,3 +1,5 @@
+import React from 'react';
+
 import '../ServicePages/servicePages.css';
 import SolutionPageTemplate from './SolutionPageTemplate/SolutionPageTemplate';
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { React, useState } from 'react';
 import './navbar.css';
 import NetsinerjiLogo from '../../assets/NetsinerjiLogo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';

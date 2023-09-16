@@ -1,3 +1,4 @@
+import React from 'react';
 import './home.css';
 import Laptop from '../../assets/Laptop.png';
 import Typist from 'react-typist';
@@ -36,7 +37,7 @@ const Home = () => {
           offset={-65}
           duration={400}
           activeClass="active-item"
-          className='get-started-btn'
+          className="get-started-btn"
         >
           <button>Get Started</button>
         </ScrollLink>

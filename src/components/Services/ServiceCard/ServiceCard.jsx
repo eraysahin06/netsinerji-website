@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './serviceCard.css';
 import PropTypes from 'prop-types';
