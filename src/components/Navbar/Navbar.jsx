@@ -44,7 +44,7 @@ const Navbar = () => {
             to="home-section"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-76}
             duration={400}
             activeClass="active-item"
             onClick={closeMenu}
@@ -55,7 +55,7 @@ const Navbar = () => {
             to="services-section"
             spy={true}
             smooth={true}
-            offset={-65}
+            offset={-70}
             duration={400}
             activeClass="active-item"
             onClick={closeMenu}
@@ -77,7 +77,7 @@ const Navbar = () => {
             to="contact-section"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={0}
             duration={400}
             activeClass="active-item"
             onClick={closeMenu}

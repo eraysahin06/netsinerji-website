@@ -26,6 +26,7 @@ import TechnicalService from './Pages/SolutionPages/TechnicalService';
 import TelegramBots from './Pages/SolutionPages/TelegramBots';
 import ValueManagement from './Pages/SolutionPages/ValueManagement';
 import WebBasedPDF from './Pages/SolutionPages/WebBasedPDF';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -226,6 +227,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
