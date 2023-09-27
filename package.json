@@ -1,6 +1,4 @@
 {
-  "name": "netsinerji-website",
-  "homepage": "https://eraysahin06.github.io/netsinerji-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,8 +18,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.15.0",
-    "react-scroll": "^1.8.9",
-    "react-typist": "^2.0.5"
+    "react-scroll": "^1.8.9"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
