@@ -7,10 +7,6 @@ Welcome to Netsinerji, a personal portfolio project showcasing an IT company web
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Deployment](#deployment)
-- [License](#license)
 
 ## Introduction
 
